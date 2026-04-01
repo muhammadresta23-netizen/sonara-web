@@ -33,6 +33,10 @@ Preferred Session Date:
 (e.g. 23/05/2025)
 Photoshoot Location:
 Additional Requests (Optional):
+function toggleMenu() {
+    let menu = document.getElementById("nav-menu");
+    menu.classList.toggle("active");
+}
 
 Thank you for choosing us! Once we receive your request, we’ll get back to you shortly to confirm your booking. We can’t wait to create beautiful memories with you ✨`;
 

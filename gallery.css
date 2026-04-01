@@ -1,0 +1,111 @@
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* SECTION */
+.gallery {
+    padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(to top, rgba(55, 5, 68, 0.637), rgba(142, 1, 185, 0.74)), 
+                url('download (5).jpg') center/cover;
+    min-height: 100vh;
+}
+
+/* JUDUL */
+.gallery h1 {
+    margin-bottom: 0px; 
+    color: azure;
+    border-color: aqua;
+}
+
+.slogan {
+    margin-top: 0;
+    color: azure;
+    border: 2px solid rgba(71, 43, 104, 0.726);
+    padding: 5px 10px;
+    display: inline-block;
+    color: white;
+    text-shadow: 
+        1px 1px 0 black,
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* ITEM */
+.item {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+/* GAMBAR */
+.item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+/* HOVER */
+.item:hover img {
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0,0,0,0.6);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+
+    opacity: 0;
+    transition: 0.3s;
+}
+
+/* SAAT DIKLIK */
+.item.active .overlay {
+    opacity: 1;
+}
+
+/* BACK BUTTON */
+.back {
+    margin-top: 30px;
+}
+
+.back a {
+    text-decoration: none;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: black;
+    transition: 0.3s;
+}
+
+.back a:hover {
+    background: black;
+    color: white;
+}

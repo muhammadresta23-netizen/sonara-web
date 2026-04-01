@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sonara</title>
+    <link rel="stylesheet" href="sonara.css">
+</head>
+<body>
+    <script src="sonara.js"></script>
+    <div class="navbar">
+    <div class="logo">
+        <img src="LOGO.png" alt="logo">
+    </div>
+
+    <!-- tombol titik 3 -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <ul id="nav-menu">
+        <li><a href="">HOME</a></li>
+        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="#price">PRICE</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+    </div>
+<section class="home">
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Timeless Moments, Captured Perfectly</h1>
+            <p>Capture every precious moment with a
+                 professional touch. We deliver elegant, sharp, and story-telling photos.</p>
+            <div class="hero-btn">
+                <a href="#" class="btn">Explore Gallery</a>
+                <a href="#" class="btn-outline">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="services">
+        <div class="card1">
+            <h3>Graduation</h3>
+            <p>Dokumentasi wisuda dengan hasil clean & profesional.</p>
+        </div>
+        <div class="card1">
+            <h3>Event</h3>
+            <p>Mengabadikan setiap momen penting acara Anda.</p>
+        </div>
+        <div class="card1">
+            <h3>Prewedding</h3>
+            <p>Foto dengan konsep elegan dan penuh makna.</p>
+        </div>
+    </div>
+
+    <!-- WHY US -->
+    <div class="why">
+        <h2>Why Choose Us</h2>
+        <div class="why-box">
+            <div>✔ HD Quality & Professional Editing</div>
+            <div>✔ Experienced Photographers</div>
+            <div>✔ Affordable Prices</div>
+            <div>✔ Fast & Friendly Service</div>
+        </div>
+    </div>
+
+</section>
+<section class="gallery">
+    <div id="gallery"></div>
+    <h1>Gallery</h1>
+
+    <div class="gallery-grid">
+
+        <div class="item">
+            <img src="A happy moment in life.jpg">
+            <div class="overlay">
+                <h3>Graduation</h3>
+                <p>Capture Moment</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="akad.jpg">
+            <div class="overlay">
+                <h3>Event</h3>
+                <p>Special Day</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="jonghalee.jpg">
+            <div class="overlay">
+                <h3>Prewedding</h3>
+                <p>Beautiful Story</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="foto.jpg">
+            <div class="overlay">
+                <h3>Portrait</h3>
+                <p>Elegant Style</p>
+            </div>
+        </div>
+
+    </div>
+<div class=" booking">
+<section class="price">
+    <div id="price"></div>
+    <h1>PRICE AND BOOKING</h1>
+</section>
+<div class="price-container">
+    <div class="card">
+        <img src="pass.jpg">
+        <h2>Pass Photo</h2>
+        <p>2x3 / 3x4 / 4x6 sizes</p>
+        <span>$10</span>
+
+        <div class="btn-group">
+            <button class="buy"  onclick="buyNow('Pass Photo')">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="self.jpg">
+        <h2>Self Photo Studio</h2>
+        <p>Private self-shoot studio <br>
+            Remote control camera</p>
+        <span>$40</span>
+
+        <div class="btn-group">
+            <button class="buy" onclick="buyNow('Self Photo')">Buy Now</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="group.jpg">
+        <h2>Group Photografy</h2>
+        <p>Up to 5–10 people <br>
+            Indoor / outdoor session
+           </p>
+        <span>$10</span>
+
+        <div class="btn-group">
+            <button class="buy" onclick="buyNow('Group Photo')">Buy Now</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="wisuda.jpg">
+        <h2>Graduation Photo</h2>
+        <p>Professional graduation concept
+            Includes editing & retouching</p>
+        <span>$40</span>
+
+        <div class="btn-group">
+            <button class="buy" onclick="buyNow('Graduation Photo')">Buy Now</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="wedding.jpg">
+        <h2>Wedding Photografy</h2>
+        <p>Pre-wedding / wedding day coverage <br>
+            Full documentation (photo & optional video)</p>
+        <span>$40</span>
+
+        <div class="btn-group">
+            <button class="buy" onclick="buyNow('>Wedding Photografy')">Buy Now</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="tour.jpg">
+        <h2>Tour Photografy</h2>
+        <p> Personal or group travel sessions
+            Outdoor and destination photography</p>
+        <span>$40</span>
+
+        <div class="btn-group">
+            <button class="buy" onclick="buyNow('Tour Photografy')">Buy Now</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="event.jpg">
+        <h2>Event Photografy</h2>
+        <p>Professional photographer on-site
+            Full event documentation</p>
+        <span>$40</span>
+
+        <div class="btn-group">
+            <button class="buy" onclick="buyNow('Event Photografy')">Buy Now</button>
+        </div>
+    </div>
+       <div class="card">
+        <img src="ukin.jpg">
+        <h2>Teaching Practice Videograpy</h2>
+        <p>Effective Teaching Practice Session
+            Interactive Classroom Teaching Practice</p>
+        <span>$40</span>
+
+        <div class="btn-group">
+            <button class="buy" onclick="buyNow('Teaching Practice Videograpy')">Buy Now</button>
+        </div>
+    </div>
+   </div> 
+    <section class="contact">
+
+    <h1>Contact Us</h1>
+    <p>Let’s connect and capture your best moments</p>
+
+    <!-- SOCIAL LINKS -->
+     <div id="contact"></div>
+    <div class="contact-links">
+        <a href="https://wa.me/628950?text=Hello%20I%20want%20to%20book%20a%20session" target="_blank" class="wa">WhatsApp</a>
+        <a href="https://instagram.com/username" target="_blank" class="ig">Instagram</a>
+        <a href="https://tiktok.com/@username" target="_blank" class="tt">TikTok</a>
+    </div>
+
+    <!-- CONTACT INFO -->
+    <div class="info">
+        <p><a href="https://wa.me/6289509494475?text=Hello%20I%20want%20to%20book%20a%20photo%20session" 
+   class="wa-float" 
+   target="_blank">
+    💬
+</a></p>
+        <p>📧 your@email.com</p>
+        <p>📍 Malang, Indonesia</p>
+        <p>🕒 Open: 09:00 - 18:00</p>
+    </div>
+
+    <!-- FORM -->
+   <form onsubmit="sendToWA(event)" class="booking-form">
+
+    <label>Full Name</label>
+    <input type="text" id="name" placeholder="👤 e.g. John Doe" required>
+    <label>Select Service</label>
+    <select id="service" required>
+        <option value="">📸 Choose your photography service</option>
+        <option>Pas Photo</option>
+        <option>Self Photo</option>
+        <option>Group Photo</option>
+        <option>Graduation Photo</option>
+        <option>Wedding Photography</option>
+        <option>Tour Photografy</option>
+        <option>Event Photography</option>
+        <option>Teaching Practice Videograpy</option>
+        
+    </select>
+
+    <label>Booking Date</label>
+    <input type="date" id="date" required>
+
+    <label>Additional Request</label>
+    <textarea id="message" placeholder="💬 Concept, location, or special request..."></textarea>
+
+    <button type="submit">📲 Book via WhatsApp</button>
+
+</form>
+
+    <!-- GOOGLE MAP -->
+    <div class="map">
+        <iframe 
+            src="https://maps.google.com/maps?q=Malang&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            loading="lazy">
+        </iframe>
+    </div>
+
+</section>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- BRAND -->
+        <div class="footer-box">
+            <h2>Sonara Studio</h2>
+            <p>Capturing your best moments with professional photography services.</p>
+        </div>
+
+        <!-- MENU -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Price</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>📞 +62 812-3456-7890</p>
+            <p>📧 your@email.com</p>
+            <p>📍 Blitar, Indonesia</p>
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+            <div class="social">
+                <a href="#">WhatsApp</a>
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+        <p>© 2026 SONARA Studio. All rights reserved.</p>
+    </div>
+
+</footer>
+
+</body>
